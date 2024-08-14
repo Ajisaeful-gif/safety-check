@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="static/css/style.css">
+    
+    <!-- Chabot CSS -->
+    <link rel="stylesheet" href="static/css/chat.css">
+    
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <title>SafetyCheck</title>
+  </head>
+  <body>   
+    <div class="site-navbar-wrap">
+      <div class="site-navbar site-navbar-target js-sticky-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <a class="col-2" href="/">
+              <img src="static/images/logo.png" width="30" height="30" alt="Logo">
+              <h2 class="tulisan-logo">SafetyCheck</h2>
+            <a>
+            <div class="col-10">
+              <nav class="site-navigation text-right" role="navigation">
+                <div class="container">
+                  <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+                  <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/deteksi" class="nav-link active">Detection</a></li>
+                    <li><a href="/about" class="nav-link">About</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-deteksi" style="background-image: url('static/images/Detection.png');">
+        <div class="button-wrapper-deteksi">
+            <div class="herofont-deteksi">
+            <h1 class="fonts" style="font-weight: bold">Object Detection</h1>
+            <h4 class="fonts-detek">Unggah gambar atau menggunakan webcam secara real time untuk mengidentifikasi <br> dan menentukan lokasi dari Alat Pelindung Diri (APD) yang digunakan.</h4>
+            </div>            
+          </div>
+      </div>
+      <div class="container-detection">
+        <div class="side-nav">
+          <ul class="sidebar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="/deteksi">
+                      <i class="material-icons" style="vertical-align: middle;">image</i>
+                      <span style="vertical-align: middle; margin-left:10px;">Upload Images</span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/deteksi_video">
+                      <i class="material-icons" style="vertical-align: middle;">movie</i>
+                      <span style="vertical-align: middle; margin-left:10px;">Upload Video</span>
+                  </a>
+              </li>
+              <li class="nav-item active">
+                  <a class="nav-link active" href="#">
+                      <i class="material-icons" style="vertical-align: middle;">videocam</i>
+                      <span style="vertical-align: middle; margin-left:10px;">Webcam</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+        <div class="content-detection">
+            <div class="upload-image">
+                <h3>Webcam</h3>
+                <section class="col-sm" >
+                  <img src="{{ url_for('webapp') }}"   alt="Upload video">
+                </section>
+            </div>
+        </div>
+      </div>
+      
+      <div class="container-artikel-referensi">
+          <h1 class="fonts-artikel" style="font-weight: bold">Articles Reference</h1>
+          <div class="artikel-container">
+            <div class="artikel">
+              <h2>PPE detector: a YOLO-based architecture to detect personal protective equipment (PPE) for construction sites</h2>
+              <p>ABSTRACT With numerous countermeasures, the number of deaths in the construction industry is still higher compared to other industries. Personal...
+                <a href="https://pubmed.ncbi.nlm.nih.gov/35875643/" target="_blank">Read More</a>
+              </p>        
+            </div>
+            <div class="artikel">
+              <h2>Deep learning for site safety: Real-time detection of personal protective equipment</h2>
+              <p>The leading causes of construction fatalities include traumatic brain injuries (resulted from fall and electrocu- tion) and collisions (resulted from struck by objects). As a preventive step, the U.S. Occupational...
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0926580519308325" target="_blank">Read More</a>
+              </p>        
+            </div>
+            <div class="artikel">
+              <h2>Pentingnya Menggunakan Alat Pelindung Diri Saat Bekerja</h2>
+              <p>Alat pelindung diri (APD) digunakan untuk menjaga keamanan dan keselamatan pekerja. Kejatuhan benda berat, terluka oleh mesin produksi, atau terpapar bahan ....
+                  <a href="https://www.alodokter.com/memahami-pentingnya-menggunakan-alat-pelindung-diri-saat-bekerja" target="_blank">Read More</a>
+              </p>
+              
+            </div>
+            <div class="artikel">
+              <h2>10 QnA Tentang Alat Pelindung Diri (APD) yang Penting Anda Ketahui</h2>
+              <p>Alat pelindung diri (APD) digunakan sebagai ‘upaya terakhir’ dalam melindungi pekerja apabila rekayasa teknologi (engineering control) dan kontrol administratif (administrative control) tidak terlaksana dengan baik....
+                <a href="https://safetysignindonesia.id/10-tanya-jawab-tentang-alat-pelindung-diri-apd-yang-penting-anda-ketahui/" target="_blank">Read More</a>
+              </p>        
+            </div>
+          </div>
+      </div>
+   
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery.sticky.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/slider.js"></script>
+    <script src="static/js/deteksi.js"></script>
+    <script src="static/js/Chat.js"></script>
+    <script src="static/js/app.js"></script>
+  </body>
+  <footer class="footer">
+    <div class="footer-left">
+      <figure>
+        <img src="static/images/logo.png" alt="gambar footer">
+        <P>Aji Saeful</P>
+        <p>Email. ajiomc23@gmail.com</p>
+        <p>No.Hp / Wa. 081327800375</p>
+      </figure> 
+    </div>
+    <div class="footer-right">
+      <figure>
+        <p >Support By:</p>
+        <a href="https://www.amikompurwokerto.ac.id/" target="_blank"><img src="static/images/aji.png" alt="gambar3"></a>
+        <a href="#" target="_blank"><img src="static/images/FIK.png" alt="gambar1"></a>
+      </figure>   
+    </div>
+    <p class="footer-copyright">
+      &copy; 2023 SafetyCheck. All rights reserved.
+    </p>
+  </footer>  
+</html>
